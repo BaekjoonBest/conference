@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { media, breakpoints } from '../../utils/mediaquery';
+import { media, breakpoints } from '../../utils/responsive';
 
 export const Container = styled.header`
   position: absolute;
@@ -8,6 +8,7 @@ export const Container = styled.header`
 
   display: none;
   justify-content: center;
+  background: linear-gradient(90deg, #24A4EA, #379DEB 25%, #B76BF0);
   width: 100%;
   padding: 0.5rem 1rem;
 
@@ -15,14 +16,22 @@ export const Container = styled.header`
 
   ${media.greaterThan(breakpoints.small)} {
     display: flex;
-
-    justify-content: space-between;
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 0.5rem 1rem;
   }
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  ${media.greaterThan(breakpoints.large)} {
+    max-width: 1024px;
+  }
+`;
+
+export const Item = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -33,6 +42,7 @@ export const Logo = styled.a`
   font-weight: bold;
   font-size: 2em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 `;
 
 export const Navigation = styled.nav`

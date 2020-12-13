@@ -1,6 +1,7 @@
 export interface MenuItem {
   href: string;
   text: string;
+  public?: boolean;
 }
 
 export interface Breakpoints {

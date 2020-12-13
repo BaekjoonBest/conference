@@ -10,18 +10,18 @@ export const Container = styled.div`
 export const Reset = css`
   @import url(//fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap);
   @import url(//fonts.googleapis.com/css2?family=Lato:wght@900&display=swap);
-  
+
   html, body, #__next {
     height: 100%;
     min-height: 100%;
   }
-  
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  
+
   body {
     max-width: 100%;
 

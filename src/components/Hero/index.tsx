@@ -30,7 +30,6 @@ const Hero = () => (
         }
       </g>
     </Svg>
-
   </Container>
 );
 

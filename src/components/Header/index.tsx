@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/react';
 import React from 'react';
+import { jsx } from '@emotion/react';
 import {
-  Container, Logo, Navigation, NavigationItem, Wrapper,
+  Container, Logo, Navigation, NavigationItem, Item, Wrapper,
 } from './styles';
 import { MenuItem } from '../../contants/types';
 
@@ -21,6 +21,7 @@ const Header = () => {
     {
       href: '/about',
       text: 'About',
+      public: true,
     },
   ];
 
@@ -32,19 +33,21 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Logo>BBConf</Logo>
-      </Wrapper>
-      <Wrapper>
-        <Navigation>
-          {menuItems.map((item) => (
-            <NavigationItem
-              href={item.href}
-              onClick={underConstruction}
-            >
-              {item.text}
-            </NavigationItem>
-          ))}
-        </Navigation>
+        <Item>
+          <Logo href='/'>BBConf</Logo>
+        </Item>
+        <Item>
+          <Navigation>
+            {menuItems.map((item) => (
+              <NavigationItem
+                href={item.href}
+                onClick={item.public ? undefined : underConstruction}
+              >
+                {item.text}
+              </NavigationItem>
+            ))}
+          </Navigation>
+        </Item>
       </Wrapper>
     </Container>
   );
