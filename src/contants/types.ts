@@ -9,3 +9,10 @@ export interface Breakpoints {
   medium: string;
   small: string;
 }
+
+export interface SessionInfo {
+  time: string ;
+  title: string ;
+  speaker: string ;
+  description: string ;
+}

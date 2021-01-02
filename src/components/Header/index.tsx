@@ -13,6 +13,7 @@ const Header = () => {
     {
       href: '/sessions',
       text: 'Sessions',
+      public: true,
     },
     {
       href: '/archive',
