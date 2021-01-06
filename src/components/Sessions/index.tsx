@@ -7,22 +7,19 @@ import { SessionInfo } from '../../contants/types';
 const Sessions = () => {
   const sessionInfos: SessionInfo[] = [
     {
-      time: 'HH:MM ~ HH:MM',
-      title: '이것은 테스트 타이틀1',
-      speaker: '이것은/테스트/발표자/정보',
-      description: '이것은 아직 구현되지 않은 발표 설명',
+      time: '13:00 ~ 13:30',
+      title: '중심인물과 펭귄결합',
+      speaker: '헛소리꾼/백준푸는방',
     },
     {
-      time: 'HH:MM ~ HH:MM',
-      title: '이것은 테스트 타이틀2',
-      speaker: '이것은/테스트/발표자/정보',
-      description: '이것은 아직 구현되지 않은 발표 설명',
+      time: '13:35 ~ 14:00',
+      title: '이것이 1코노바이트다',
+      speaker: '계산기/백준/9813',
     },
     {
-      time: 'HH:MM ~ HH:MM',
-      title: '이것은 테스트 타이틀3',
-      speaker: '이것은/테스트/발표자/정보',
-      description: '이것은 아직 구현되지 않은 발표 설명',
+      time: ' 14:45 ~ 18:00',
+      title: '스타트업 아포칼립스',
+      speaker: '익명',
     },
   ];
 
@@ -34,7 +31,6 @@ const Sessions = () => {
           time={item.time}
           title={item.title}
           speaker={item.speaker}
-          description={item.description}
         />
       ))}
     </Content>

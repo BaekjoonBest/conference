@@ -14,10 +14,6 @@ export const SessionInfo = styled.span`
   padding: 23px 98px 21px 20px;
   `;
 
-export const Description = styled.p`
-  font-size: 1.75em;
-`;
-
 export const Title = styled.span`
     overflow: hidden;
     text-overflow: ellipsis;

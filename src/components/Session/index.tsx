@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import {
-  Description, SessionInfo, Title, Speaker, Time, Item,
+  SessionInfo, Title, Speaker, Time, Item,
 } from './styles';
 
 const SessionItem = (props: any) => {
@@ -9,23 +9,16 @@ const SessionItem = (props: any) => {
   return (
     <Item>
       <Time>
-        {' '}
         {time}
-        {' '}
       </Time>
       <SessionInfo>
         <Title>
-          {' '}
           {title}
-          {' '}
         </Title>
         <Speaker>
           {speaker}
         </Speaker>
       </SessionInfo>
-      <Description>
-        {/* {description} */}
-      </Description>
     </Item>
   );
 };

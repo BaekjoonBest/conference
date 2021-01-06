@@ -11,8 +11,7 @@ export interface Breakpoints {
 }
 
 export interface SessionInfo {
-  time: string ;
-  title: string ;
-  speaker: string ;
-  description: string ;
+  time: string;
+  title: string;
+  speaker: string;
 }
