@@ -30,6 +30,7 @@ const Sessions = () => {
     <Content>
       {sessionInfos.map((item) => (
         <SessionItem
+          key={item.title}
           time={item.time}
           title={item.title}
           speaker={item.speaker}

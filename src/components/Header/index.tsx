@@ -41,6 +41,7 @@ const Header = () => {
           <Navigation>
             {menuItems.map((item) => (
               <NavigationItem
+                key={item.text}
                 href={item.href}
                 onClick={item.public ? undefined : underConstruction}
               >
