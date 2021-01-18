@@ -30,9 +30,9 @@ export const Speaker = styled.span`
     white-space: nowrap;
 `;
 
-export const Time = styled.span`
+export const SessionNumber = styled.span`
   width: 80px;
-  font-size: 1.0em;
+  font-size: 1.4em;
   padding: 0 0 0 19px;
   margin-bottom: 4px;
   color: #aaa;

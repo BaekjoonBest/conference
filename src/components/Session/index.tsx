@@ -1,16 +1,16 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import {
-  SessionInfo, Title, Speaker, Time, Item,
+  SessionInfo, Title, Speaker, SessionNumber, Item,
 } from './styles';
 
 const SessionItem = (props: any) => {
-  const { time, title, speaker } = props;
+  const { sessionNumber, title, speaker } = props;
   return (
     <Item>
-      <Time>
-        {time}
-      </Time>
+      <SessionNumber>
+        {sessionNumber}
+      </SessionNumber>
       <SessionInfo>
         <Title>
           {title}
